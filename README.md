@@ -89,8 +89,7 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
 OpenXiangShan uses [SBT](https://www.scala-sbt.org/) to handle the Scala build and dependencies flow.
 
-You need Java and SBT as:
-
+You need Java and SBT. However, I do not recall exactly if I installed it like following:
 
 ```
 sudo apt-get install default-jdk
@@ -101,11 +100,19 @@ sudo apt-get update
 sudo apt-get install sbt
 ```
 
+I installed the version `1.2.6`
+
+```
+~/xs-env/XiangShan$ sbt --version
+[info] 1.2.6
+sbt runner version: 1.11.2
+```
+
 Then, following the section `Generate Verilog code for Xiangshan core` from [here](https://docs.xiangshan.cc/zh-cn/latest/tools/xsenv/):
 
 ```
 make init
-make verilot
+make verilog
 ```
 
 
