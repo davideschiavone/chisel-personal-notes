@@ -115,8 +115,13 @@ make init
 make verilog
 ```
 
+### NIX
 
+You can use the Nix environment as well:
 
+First, install Nix and flake as written [here](https://github.com/mschwaig/howto-install-nix-with-flake-support)
+
+then do `nix develop` as reported [here](https://docs.xiangshan.cc/zh-cn/latest/tools/xsenv/)
 
 
 
